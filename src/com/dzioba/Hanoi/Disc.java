@@ -1,13 +1,13 @@
 package com.dzioba.Hanoi;
 
 public class Disc {
-    private int weight;
+    private final int weight;
 
-    public Disc(int weight) {
+    Disc(int weight) {
         this.weight = weight;
     }
 
-    public boolean isHeavierThan(Disc anotherDisc) {
+    boolean isHeavierThan(Disc anotherDisc) {
         return weight > anotherDisc.weight;
     }
 

@@ -1,11 +1,11 @@
 package com.dzioba.Hanoi;
 
-public class Move {
-    private Tower from;
-    private Tower to;
-    private Disc disc;
+class Move {
+    private final Tower from;
+    private final Tower to;
+    private final Disc disc;
 
-    public Move(Tower from, Tower to, Disc disc) {
+    Move(Tower from, Tower to, Disc disc) {
         this.from = from;
         this.to = to;
         this.disc = disc;

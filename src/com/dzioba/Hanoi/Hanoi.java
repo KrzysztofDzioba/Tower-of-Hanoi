@@ -21,7 +21,7 @@ public class Hanoi {
         return discAmount < 1;
     }
 
-    public void start() {
+    private void start() {
         try {
             throwExceptionIfWrongDiscAmount();
             HanoiGame hg = new HanoiGame(discs, new LinkedList<>());
