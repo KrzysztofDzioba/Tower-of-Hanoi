@@ -11,10 +11,6 @@ public class Disc {
         return weight > anotherDisc.weight;
     }
 
-    public int getWeight() {
-        return weight;
-    }
-
     @Override
     public String toString() {
         return  weight + " ";

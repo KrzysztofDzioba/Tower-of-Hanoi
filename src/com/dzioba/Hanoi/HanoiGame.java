@@ -5,13 +5,13 @@ import java.util.List;
 
 public class HanoiGame {
     private Board board;
-    private final int discs;
+    private int discs;
     private List<Move> moves;
 
     public HanoiGame(int discs, List<Move> moves) {
         this.board = createNewBoard(discs);
-        this.discs = discs; // TODO: Implement discs must be higher than 1 with exception throwing/handling
         this.moves = moves;
+        this.discs = discs;
     }
 
     private Board createNewBoard(int discs) {
@@ -35,4 +35,8 @@ public class HanoiGame {
         moveDiscsUntilFinished(discs, from, middle, to);
         return moves;
     }
+
+
+
+
 }
